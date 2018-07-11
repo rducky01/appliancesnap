@@ -20,4 +20,7 @@ from main import views as v
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', v.index),
+    path('about/', v.about),
+    path('service_area/', v.service_area),
+    path('contact/', v.contact),
 ]

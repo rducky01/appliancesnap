@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Snap Appliance</title>
+    <title>Snap Appliance - Service Area</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href=" {% static "css/business-casual.css" %}" rel="stylesheet">
+    <link href="{% static "css/business-casual.css" %}" rel="stylesheet">
 
   </head>
 
@@ -39,13 +39,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/">Home</a>
+            </li>
             <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="/">Home
+              <a class="nav-link text-uppercase text-expanded" href="/service_area">Service Area
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="/service_area">Service Area</a>
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="/about">About</a>
@@ -58,35 +58,19 @@
       </div>
     </nav>
 
-    <section class="page-section clearfix">
-      <div class="container">
-        <div class="intro">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static "img/intro.jpg" %}" alt="">
-          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Service in a Snap</span>
-              <span class="section-heading-lower">Snap Appliance</span>
-            </h2>
-            <p class="mb-3">Snap appliance services is a locally owned and operated major appliance repair company. Our main business is repair. I will give you the facts, empowering you to make a wise appliance repair decsion.
-            </p>
-            <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="page-section cta">
+    <section class="page-section about-heading">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Our Promise</span>
-                <span class="section-heading-lower">To You</span>
-              </h2>
-              <p class="mb-0">You can count on prompt and quality service at a competitive price, backed by our own service warranty. Those who provide an E-mail addresses will receive money saving offers and helpful tips. After nearly 40 years of product service, I'm certain I an get you up and running in a snap!</p>
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Snap Appliance Service Area</span>
+                  <span class="section-heading-lower">Kansas City Metro Area</span>
+                </h2>
+                <div id="map" style="width:100%;height:400px;">My map will go here</div>
+              </div>
             </div>
           </div>
         </div>
@@ -102,6 +86,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
     <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "js/map.js" %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuT09SSvivSuBXWCZvDVv6dSkCffUa-Fo&callback=myMap"></script>
 
   </body>
 
