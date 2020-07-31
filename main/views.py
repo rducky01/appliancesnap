@@ -1,4 +1,4 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.csrf import ensure_csrf_cookie
 
@@ -6,19 +6,19 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 @csrf_protect
 @ensure_csrf_cookie
 def index(request):
-    return render_to_response('index.html')
+    return render(request, 'index.html')
 
 @csrf_protect
 @ensure_csrf_cookie
 def about(request):
-    return render_to_response('about.html')
+    return render(request, 'about.html')
 
 @csrf_protect
 @ensure_csrf_cookie
 def service_area(request):
-    return render_to_response('service_area.html')
+    return render(request, 'service_area.html')
 
 @csrf_protect
 @ensure_csrf_cookie
 def contact(request):
-    return render_to_response('contact.html')
+    return render(request, 'contact.html')
