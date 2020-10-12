@@ -22,5 +22,6 @@ urlpatterns = [
     path('', v.index),
     path('about/', v.about),
     path('service_area/', v.service_area),
+    path('warranty_service/', v.warranty_service),
     path('contact/', v.contact),
 ]

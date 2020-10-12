@@ -15,6 +15,11 @@ def about(request):
 
 @csrf_protect
 @ensure_csrf_cookie
+def warranty_service(request):
+    return render(request, 'warranty.html')
+
+@csrf_protect
+@ensure_csrf_cookie
 def service_area(request):
     return render(request, 'service_area.html')
 
